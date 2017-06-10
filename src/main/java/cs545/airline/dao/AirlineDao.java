@@ -22,7 +22,12 @@ public class AirlineDao {
 
 
 	public void create(Airline airline) {
+		entityManager.getTransaction().begin();
 		entityManager.persist(airline);
+        entityManager.flush();
+		entityManager.getTransaction().commit();
+
+
 	}
 
 	public Airline update(Airline airline) {
@@ -30,8 +35,12 @@ public class AirlineDao {
 	}
 
 	public void delete(Airline airline) {
+        entityManager.getTransaction().begin();
 		entityManager.remove(airline);
-	}
+        entityManager.flush();
+        entityManager.getTransaction().commit();
+
+    }
 
 	public Airline findOne(long id) {
 		return entityManager.find(Airline.class, id);
