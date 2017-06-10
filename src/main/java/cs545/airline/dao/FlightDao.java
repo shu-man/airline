@@ -22,15 +22,26 @@ public class FlightDao {
 	private EntityManager entityManager = JpaUtil.getEntityManager();
 
 	public void create(Flight flight) {
+		entityManager.getTransaction().begin();
 		entityManager.persist(flight);
+		entityManager.flush();
+		entityManager.getTransaction().commit();
 	}
 
 	public Flight update(Flight flight) {
-		return entityManager.merge(flight);
+	    Flight flight1=new Flight();
+		entityManager.getTransaction().begin();
+		flight1= entityManager.merge(flight);
+		entityManager.flush();
+		entityManager.getTransaction().commit();
+		return flight1;
 	}
 
 	public void delete(Flight flight) {
+		entityManager.getTransaction().begin();
 		entityManager.remove(flight);
+		entityManager.flush();
+		entityManager.getTransaction().commit();
 	}
 
 	public Flight findOne(long id) {
