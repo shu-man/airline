@@ -5,6 +5,7 @@ import java.util.List;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
@@ -15,60 +16,60 @@ import edu.mum.gf.workaround.JpaUtil;
 @ApplicationScoped
 public class AirlineDao {
 
-//	@PersistenceContext(unitName = "cs545")
+    //	@PersistenceContext(unitName = "cs545")
 //	private static EntityManager entityManager;
 //  Couldn't figure out another way to inject the persistence context
-	private EntityManager entityManager = JpaUtil.getEntityManager();
+    private EntityManager entityManager = JpaUtil.getEntityManager();
 
 
-	public void create(Airline airline) {
-		entityManager.getTransaction().begin();
-		entityManager.persist(airline);
-        entityManager.flush();
-		entityManager.getTransaction().commit();
+    public void create(Airline airline) {
+        EntityTransaction transaction = entityManager.getTransaction();
+        transaction.begin();
+        entityManager.persist(airline);
+        transaction.commit();
 
-
-	}
-
-	public Airline update(Airline airline) {
-	    Airline airline1=new Airline();
-	    entityManager.getTransaction().begin();
-	    airline1= entityManager.merge(airline);
-	    entityManager.flush();
-	    entityManager.getTransaction().commit();
-		return airline1;
-	}
-
-	public void delete(Airline airline) {
-        entityManager.getTransaction().begin();
-		entityManager.remove(airline);
-        entityManager.flush();
-        entityManager.getTransaction().commit();
 
     }
 
-	public Airline findOne(long id) {
-		return entityManager.find(Airline.class, id);
-	}
+    public Airline update(Airline airline) {
+        Airline airline1 = new Airline();
+        EntityTransaction transaction = entityManager.getTransaction();
+        transaction.begin();
+        airline1 = entityManager.merge(airline);
+        transaction.commit();
+        return airline1;
+    }
 
-	public Airline findOneByName(String name) {
-		Query query = entityManager.createQuery("select a from Airline a where a.name=:name", Airline.class);
-		query.setParameter("name", name);
+    public void delete(Airline airline) {
+        EntityTransaction transaction = entityManager.getTransaction();
+        transaction.begin();
+        entityManager.remove(airline);
+        transaction.commit();
 
-		return (Airline) query.getSingleResult();
-	}
+    }
 
-	@SuppressWarnings("unchecked")
-	public List<Airline> findByFlight(long flightId) {
-		Query query = entityManager
-				.createQuery("select distinct a from Airline a join a.flights f where f.id=:flightId", Airline.class);
-		query.setParameter("flightId", flightId);
+    public Airline findOne(long id) {
+        return entityManager.find(Airline.class, id);
+    }
 
-		return query.getResultList();
-	}
+    public Airline findOneByName(String name) {
+        Query query = entityManager.createQuery("select a from Airline a where a.name=:name", Airline.class);
+        query.setParameter("name", name);
 
-	public List<Airline> findAll() {
-		return entityManager.createQuery("select a from Airline a", Airline.class).getResultList();
-	}
+        return (Airline) query.getSingleResult();
+    }
+
+    @SuppressWarnings("unchecked")
+    public List<Airline> findByFlight(long flightId) {
+        Query query = entityManager
+                .createQuery("select distinct a from Airline a join a.flights f where f.id=:flightId", Airline.class);
+        query.setParameter("flightId", flightId);
+
+        return query.getResultList();
+    }
+
+    public List<Airline> findAll() {
+        return entityManager.createQuery("select a from Airline a", Airline.class).getResultList();
+    }
 
 }
