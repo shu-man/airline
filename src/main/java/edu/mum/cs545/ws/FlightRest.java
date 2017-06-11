@@ -3,6 +3,8 @@ package edu.mum.cs545.ws;
 /**
  * Created by Hatake on 6/9/2017.
  */
+import javax.enterprise.context.RequestScoped;
+import javax.faces.bean.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.ws.rs.*;
@@ -22,6 +24,7 @@ import cs545.airline.service.FlightService;
 import java.util.List;
 @Named
 @Path("flight")
+@RequestScoped
 public class FlightRest {
     @Inject
     private FlightService flightService;

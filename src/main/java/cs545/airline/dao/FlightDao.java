@@ -30,11 +30,12 @@ public class FlightDao {
     }
 
     public Flight update(Flight flight) {
+        Flight flight1=new Flight();
         EntityTransaction transaction = entityManager.getTransaction();
         transaction.begin();
-        flight = entityManager.merge(flight);
+        flight1 = entityManager.merge(flight);
         transaction.commit();
-        return flight;
+        return flight1;
     }
 
     public void delete(Flight flight) {
