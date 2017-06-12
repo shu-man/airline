@@ -419,7 +419,7 @@
                                                               }
                                                             }
                                
-         ix GET [http://localhost:8080/midTermProject/rs/flight/27/airplane/15]()
+         ix. GET [http://localhost:8080/midTermProject/rs/flight/27/airplane/15]()
                                          * Include an airplane detail in a flight  
                                                      
                                       output:

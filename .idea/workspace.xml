@@ -128,9 +128,9 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="-3906">
-                <caret line="206" column="59" lean-forward="false" selection-start-line="206" selection-start-column="59" selection-end-line="206" selection-end-column="59" />
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="38">
+                <caret line="339" column="8" lean-forward="true" selection-start-line="339" selection-start-column="8" selection-end-line="339" selection-end-column="8" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -975,7 +975,7 @@
       <option name="presentableId" value="Default" />
       <updated>1496950562407</updated>
       <workItem from="1496950568584" duration="7926000" />
-      <workItem from="1497019882858" duration="40277000" />
+      <workItem from="1497019882858" duration="40428000" />
     </task>
     <task id="LOCAL-00001" summary="Crud operation for AirlineService">
       <created>1497027668843</created>
@@ -1026,11 +1026,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497235355172</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Crud operation for AirlineService">
+      <created>1497235617765</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1497235617765</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48203000" />
+    <option name="totallyTimeSpent" value="48354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1540,9 +1547,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-3906">
-            <caret line="206" column="59" lean-forward="false" selection-start-line="206" selection-start-column="59" selection-end-line="206" selection-end-column="59" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="38">
+            <caret line="339" column="8" lean-forward="true" selection-start-line="339" selection-start-column="8" selection-end-line="339" selection-end-column="8" />
             <folding />
           </first_editor>
           <second_editor />
