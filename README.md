@@ -100,13 +100,13 @@
             ```
     
     3. DELETE [http://localhost:8080/midTermProject/rs/airplane/delete/{id}]()
-           * Deletes the airline that matches the id
+           * Deletes the airplane that matches the id
                
                eg: DELETE http://localhost:8080/midTermProject/rs/airplane/delete/7
                output:
                Returns the Status 200 OK
      iv.PUT [http://localhost:8080/midTermProject/rs/airplane/update]()
-               * Updates airline
+               * Updates airplane with the provided ID
                    
                    eg: PUT http://localhost:8080/midTermProject/rs/airplane/update
                    input:
@@ -174,17 +174,17 @@
                                        "name": "Schiphol"
                                      }
                                      
-          3.DELETE [http://localhost:8080/midTermProject/rs/airplane/delete/{id}]()
-                 * Deletes the airline that matches the id
+          3.DELETE [http://localhost:8080/midTermProject/rs/airpot/delete/{id}]()
+                 * Deletes the airport that matches the id
                                    
-                     eg: DELETE http://localhost:8080/midTermProject/rs/airplane/delete/4
+                     eg: DELETE http://localhost:8080/midTermProject/rs/airpot/delete/4
                                    output:
                                    Returns the Status 200 OK
                                    
-            4.PUT [http://localhost:8080/midTermProject/rs/airplane/update]()
-                          * Updates airline
+            4.PUT [http://localhost:8080/midTermProject/rs/airpot/update]()
+                          * Updates airport with the provided ID
                               
-                              eg: PUT http://localhost:8080/midTermProject/rs/airplane/update
+                              eg: PUT http://localhost:8080/midTermProject/rs/airpot/update
                               input:
                                {
                                    "airportcode": "DTW",
@@ -204,7 +204,7 @@
                                  
       4.For Flights
       
-     1. GET [http://localhost:8080/midTermProject/rs/airport/retrieve]()
+     1. GET [http://localhost:8080/midTermProject/rs/flight/retrieve]()
                        * List of all Flights in following Format               
                       
                         output:
