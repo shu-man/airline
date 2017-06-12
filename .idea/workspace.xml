@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10e3bb6d-ed25-4c15-b3c4-8da69db26e5c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/main.xhtml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/mum/cs545/ws/AirportRest.java" afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs545/ws/AirportRest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -134,8 +129,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="89">
-                <caret line="422" column="78" lean-forward="false" selection-start-line="422" selection-start-column="78" selection-end-line="422" selection-end-column="78" />
+              <first_editor relative-caret-position="-1564">
+                <caret line="343" column="75" lean-forward="false" selection-start-line="343" selection-start-column="75" selection-end-line="343" selection-end-column="75" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -980,7 +975,7 @@
       <option name="presentableId" value="Default" />
       <updated>1496950562407</updated>
       <workItem from="1496950568584" duration="7926000" />
-      <workItem from="1497019882858" duration="39801000" />
+      <workItem from="1497019882858" duration="40015000" />
     </task>
     <task id="LOCAL-00001" summary="Crud operation for AirlineService">
       <created>1497027668843</created>
@@ -1017,11 +1012,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497214936670</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Crud operation for AirlineService">
+      <created>1497235151974</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1497235151974</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47727000" />
+    <option name="totallyTimeSpent" value="47941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1532,8 +1534,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="89">
-            <caret line="422" column="78" lean-forward="false" selection-start-line="422" selection-start-column="78" selection-end-line="422" selection-end-column="78" />
+          <first_editor relative-caret-position="-1564">
+            <caret line="343" column="75" lean-forward="false" selection-start-line="343" selection-start-column="75" selection-end-line="343" selection-end-column="75" />
             <folding />
           </first_editor>
           <second_editor />

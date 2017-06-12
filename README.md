@@ -105,8 +105,7 @@
                eg: DELETE http://localhost:8080/midTermProject/rs/airplane/delete/7
                output:
                Returns the Status 200 OK
-               
-     4.PUT [http://localhost:8080/midTermProject/rs/airplane/update]()
+     iv.PUT [http://localhost:8080/midTermProject/rs/airplane/update]()
                * Updates airline
                    
                    eg: PUT http://localhost:8080/midTermProject/rs/airplane/update
@@ -206,7 +205,7 @@
       4.For Flights
       
      1. GET [http://localhost:8080/midTermProject/rs/airport/retrieve]()
-                       * List of all Airports in following Format               
+                       * List of all Flights in following Format               
                       
                         output:
                        [
@@ -339,10 +338,10 @@
                                      "id": 27
                                      }
         DELETE [http://localhost:8080/midTermProject/rs/flight/27]()
-                                             * Update a flight by ID
+                                             * Delete a flight by ID
                                                             
                                      output:
-                                  Message File successfully deleted with status ok
+                                  Shows message "File successfully deleted" with status ok
         
         vi.PUT [http://localhost:8080/midTermProject/rs/flight/27/origin/12]()
                                   *Include an origin details in flight
