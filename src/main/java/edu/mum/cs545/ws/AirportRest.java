@@ -1,5 +1,6 @@
 package edu.mum.cs545.ws;
 
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.ws.rs.*;
